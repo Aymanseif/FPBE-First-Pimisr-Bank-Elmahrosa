@@ -4,9 +4,9 @@
  * @version 2024.1
  */
 
+import { randomUUID } from 'crypto';
 import winston from 'winston'; // v3.10.0
 import DailyRotateFile from 'winston-daily-rotate-file'; // v4.7.1
-import config from 'config'; // v3.3.9
 import { AnalyticsService } from './analytics.service';
 
 // Log levels with semantic meanings
@@ -139,7 +139,7 @@ export class LoggerService {
         message: string,
         meta: Record<string, any> = {}
     ): Promise<void> {
-        const requestId = crypto.randomUUID();
+        const requestId = randomUUID();
         const timestamp = new Date().toISOString();
 
         // Mask sensitive data
