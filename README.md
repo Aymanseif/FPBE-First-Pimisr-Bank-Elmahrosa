@@ -157,6 +157,10 @@ API documentation is available at:
 - Staging: https://api-staging.fpbe.com/docs
 - Production: https://api.fpbe.com/docs
 
+## Related Projects
+
+- International Civic Blockchain Constitution: https://github.com/Elmahrosa/International-Civic-Blockchain-Constitution
+
 ## Contributing
 
 1. Follow Git flow branching model
